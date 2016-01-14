@@ -1,12 +1,12 @@
 .TF-media-toggle {
-	margin-top: 10px;
-	text-align: center;
+  margin-top: 10px;
+  text-align: center;
 }
 
 .TF-media-toggle:before {
-	content: "Show Images.";
+  content: "Show Images.";
 }
 
 .TF-media-toggle.open:before {
-	content: "Hide Images.";
+  content: "Hide Images.";
 }
