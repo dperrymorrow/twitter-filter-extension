@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+
+  "name": "Twitter-filter",
+  "description": "Filter content on twitter.com",
+  "version": "1.0",
+
+  "permissions": [
+    "http://www.twitter.com/",
+    "storage",
+    "debugger"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*"],
+      "js": ["assets/js/twitter-script.js"],
+      "css": ["assets/css/twitter-styles.css"],
+      "run_at": "document_idle"
+    }
+  ],
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "index.html"
+  }
+}
